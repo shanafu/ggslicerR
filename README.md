@@ -17,10 +17,12 @@ Built around the ‘SimpleITK’ image processing framework, ‘ggslicer’ is
 able to process 2D and 3D images such as DICOM, Nifti, MINC, and
 Analyze.
 
-How to get started: There are currently four functions in the package;
-two of which may be used to extract a data frame, and two that fix and
-preserve MINC image orientation when reading and writing the image with
-‘SimpleITK’. The four functions are of the following:
+How to get started:
+
+There are currently four functions in the package; two of which may be
+used to extract a data frame, and two that fix and preserve MINC image
+orientation when reading and writing the image with ‘SimpleITK’. The
+four functions are of the following:
 
 slice_axis() : Read an image file and return a data frame containing
 voxel and world coordinates along specified slice.
@@ -48,7 +50,7 @@ This is a basic example using the slice_axis() function in ‘ggslicer’:
 ``` r
 library(ggslicer)
 
-file <- "test.nii"
+file <- "~/path/to/test/file"
 
 coordinates_df <- slice_axis(file, "y", c(7.5, 88))
 view(coordinates_df)
