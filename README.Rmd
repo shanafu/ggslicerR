@@ -31,10 +31,11 @@ Built around the ‘SimpleITK’ image processing framework, ‘ggslicer’ is a
 
 ## Installation
 
-You can install the development version of 'ggslicer' like so:
+You can install the development version of 'ggslicer' in R by simply running:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+packages.install("ggslicer")
+library(ggslicer)
 ```
 
 ## Example
