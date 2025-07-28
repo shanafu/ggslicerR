@@ -1,11 +1,27 @@
 Package: ggslicer
-Title: What the Package Does (One Line, Title Case)
+Title: Prepare Volumetric Imaging Data
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Authors@R: c(
+    person("Yohan", "Yee", email = "yohan.yee@ucalgary.ca", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-7083-1932")),
+    person("Shana", "Fu", email = "shana.fu@ucalgary.ca", role = c("aut")))
+Description: Functions that allow for efficient wrangling of imaging data into 
+    a data frame. An image file is provided, along with the desired image axis
+    and specific voxel coordinates to extract voxel and world coordinates, and 
+    intensity data at each coordinate.
+Imports:
+    dplyr,
+    magrittr,
+    pbapply,
+    rlang,
+    SimpleITK,
+    tools
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
