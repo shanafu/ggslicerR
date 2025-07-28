@@ -1,3 +1,5 @@
 # ggslicer (development version)
 
-* Initial CRAN submission.
+cat('
+* Initial development version
+', file = "NEWS.md")

@@ -1,11 +1,12 @@
 bibentry(
   bibtype  = "Article",
   title    = ,
-  author   = ,
+  author   = "Shana Fu",
   journal  = ,
-  year     = ,
+  year     = "2025",
   volume   = ,
   number   = ,
   pages    = ,
-  doi      =
+  doi      = ,
+  url      = "https://github.com/shanafu/ggslicerR"
 )
